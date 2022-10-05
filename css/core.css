@@ -20,12 +20,32 @@ main {
 /* =====================
        commons
 ========================= */
+.desktop-hidden {
+   display: none;
+}
+@media screen and (max-width: 600px) {
+   .desktop-hidden {
+      display: block;
+   }
 
+   .mobile-hidden {
+      display: none;
+   }
+}
 /* =====================
          flex
 ========================= */
 .flex-box {
    display: flex;
+}
+.flex-wrap {
+   flex-wrap: wrap;
+}
+.content-center {
+   justify-content: center;
+}
+.content-between {
+   justify-content: space-between;
 }
 /* =====================
         typography
@@ -37,7 +57,18 @@ body {
 /* =====================
         utilities
 ========================= */
+.fluid-img {
+   max-width: 100%;
+}
 
+.active {
+   /* eventuale bonus con JS, onClick assegna
+    .active a .entry o elementi della main>nav */
+}
+
+.scrollable {
+   overflow-y: auto;
+}
 /* =====================
         buttons
 ========================= */

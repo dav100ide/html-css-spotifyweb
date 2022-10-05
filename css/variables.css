@@ -2,7 +2,8 @@
 
 :root {
    /* colori */
-
+   --header-color: black;
+   --active-color: #adff2f;
    /* misure macro-aree */
    --footer-height: 5.9375rem;
    --header-width: 14.0625rem;

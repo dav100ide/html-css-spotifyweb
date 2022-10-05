@@ -17,8 +17,63 @@
    </head>
    <body>
       <div class="app-container flex-box">
-         <header>logo header</header>
-         <main>contenuto main</main>
+         <header>
+            <div class="logo-container">
+               <!-- desktop logo -->
+               <img src="img/logo.svg" alt="logo" class="fluid-img mobile-hidden" />
+               <!-- /desktop logo -->
+               <!-- mobile logo -->
+               <img src="img/logo-small.svg" alt="logosm" class="fluid-img desktop-hidden" />
+               <!-- /mobile logo -->
+            </div>
+            <!-- header-nav -->
+            <nav>
+               <div class="entry active">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="mobile-hidden">Home</span>
+               </div>
+               <div class="entry">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <span class="mobile-hidden">Cerca</span>
+               </div>
+               <div class="entry">
+                  <i class="fa-solid fa-music"></i>
+                  <span class="mobile-hidden">La tua libreria</span>
+               </div>
+            </nav>
+            <!-- header nav -->
+            <!-- lista delle playlists -->
+            <div class="mobile-hidden playlists scrollable">
+               <h4>PLAYLIST</h4>
+               <i class="fa-regular fa-square-plus"></i>
+               <span>Crea Playlist</span>
+               <ul>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <!-- <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li>
+                  <li>Nome Playlist</li> -->
+               </ul>
+            </div>
+            <!-- /lista delle playlists -->
+            <!-- user & download -->
+            <div class="header-bottom">
+               <div class="download">
+                  <i class="fa-regular fa-circle-down"></i>
+                  <span class="mobile-hidden">Installa App</span>
+               </div>
+               <div class="user">
+                  <span class="user-picture">
+                     <img src="img/profile.svg" alt="" class="fluid-img" />
+                  </span>
+                  <span class="mobile-hidden">Travis</span>
+               </div>
+            </div>
+            <!-- /user & download -->
+         </header>
+         <main class="scrollable">contenuto main</main>
       </div>
       <footer></footer>
    </body>
