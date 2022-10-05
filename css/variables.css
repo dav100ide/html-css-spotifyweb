@@ -4,4 +4,13 @@
    /* colori */
 
    /* misure macro-aree */
+   --footer-height: 5.9375rem;
+   --header-width: 14.0625rem;
+}
+
+/* OVERWRITE VARIABLES for screens narrower than 600px */
+@media screen and (max-width: 600px) {
+   :root {
+      --header-width: 3.125rem;
+   }
 }
