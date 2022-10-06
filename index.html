@@ -17,7 +17,7 @@
    </head>
    <body>
       <div class="app-container flex-box">
-         <header>
+         <header class="flex-box">
             <div class="logo-container">
                <!-- desktop logo -->
                <img src="img/logo.svg" alt="logo" class="fluid-img mobile-hidden" />
@@ -42,22 +42,25 @@
                </div>
             </nav>
             <!-- header nav -->
-            <!-- lista delle playlists -->
-            <div class="mobile-hidden playlists scrollable">
+            <!-- intro playlists  -->
+            <div class="mobile-hidden playlists">
                <h4>PLAYLIST</h4>
                <i class="fa-regular fa-square-plus"></i>
                <span>Crea Playlist</span>
-               <ul>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <!-- <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li>
-                  <li>Nome Playlist</li> -->
-               </ul>
             </div>
+            <!-- / intro playlists-->
+            <!-- lista delle playlists -->
+            <ul class="scrollable mobile-hidden">
+               <li><a href="">Nome Playlist</a></li>
+               <li><a href="">Nome Playlist</a></li>
+               <li><a href="">Nome Playlist</a></li>
+               <li><a href="">Nome Playlist</a></li>
+               <li><a href="">Nome Playlist</a></li>
+               <li><a href="">Nome Playlist</a></li>
+               <li><a href="">Nome Playlist</a></li>
+            </ul>
             <!-- /lista delle playlists -->
+
             <!-- user & download -->
             <div class="header-bottom">
                <div class="download">
@@ -68,7 +71,7 @@
                   <span class="user-picture">
                      <img src="img/profile.svg" alt="" class="fluid-img" />
                   </span>
-                  <span class="mobile-hidden">Travis</span>
+                  <span class="mobile-hidden">John Doe</span>
                </div>
             </div>
             <!-- /user & download -->

@@ -1,14 +1,17 @@
 header {
    background-color: var(--header-color);
    color: #717171;
-   position: relative;
+   flex-direction: column;
+   overflow-y: hidden;
 }
-
-header > *:not(header > nav) {
+header .logo-container {
    padding: 1.25rem;
 }
+header > *:not(header > nav) {
+   padding: 0 1.25rem;
+}
 
-:is(header > nav, .playlists, .playlists > ul) > *:not(:last-child) {
+header :is(nav, .playlists, ul.scrollable) > *:not(:last-child) {
    margin-bottom: 1rem;
 }
 
@@ -30,6 +33,9 @@ header > *:not(header > nav) {
 }
 
 /* playlists */
+.playlists {
+   padding-top: 1.25rem;
+}
 .playlists i {
    font-size: 3rem;
    font-weight: bold;
@@ -38,14 +44,16 @@ header > *:not(header > nav) {
 .playlists span {
    margin-inline-start: 0.6rem;
 }
-
+header ul.scrollable {
+   flex-grow: 1;
+   padding-bottom: 1.25rem;
+}
 /* header-bottom */
 .header-bottom {
-   position: absolute;
    bottom: 0;
    left: 0;
    right: 0;
-   padding-bottom: 0.625rem;
+   margin-top: auto;
 }
 
 .user-picture {
