@@ -78,7 +78,7 @@ header ul.scrollable {
       padding: 0;
       text-align: center;
    }
-   .logo-container {
+   header .logo-container {
       padding: 0.5rem;
       margin-bottom: 1rem;
    }
