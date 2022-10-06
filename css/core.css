@@ -60,7 +60,9 @@ h2 {
 /* =====================
         utilities
 ========================= */
-
+.circle {
+   border-radius: 50%;
+}
 .active {
    /* eventuale bonus con JS, onClick assegna
     .active a .entry o elementi della main>nav */
@@ -75,11 +77,22 @@ h2 {
         buttons
 ========================= */
 .btn {
+   color: white;
+}
+.btn-primary {
    border: 2px solid white;
    border-radius: 3.125rem;
 }
-.btn-primary {
+.btn-secondary {
+   color: var(--secondary-btn-color);
 }
+
 .btn-lg {
    padding: 0.9375rem 2rem;
+}
+.btn-md {
+   font-size: 2rem;
+}
+.btn-sm {
+   font-size: 1.2rem;
 }

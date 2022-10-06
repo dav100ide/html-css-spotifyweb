@@ -4,6 +4,9 @@
    /* colori */
    --header-color: black;
    --active-color: #adff2f;
+   --footer-bg: #242424;
+   --secondary-btn-color: #676767;
+   --footer-gray: #c1c1c1;
    /* misure macro-aree */
    --footer-height: 5.9375rem;
    --header-width: 14.0625rem;
