@@ -2,4 +2,8 @@ footer {
    background-color: rgb(0, 74, 44);
    height: var(--footer-height);
    z-index: 6969;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
 }
