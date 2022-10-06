@@ -65,7 +65,9 @@ body {
    /* eventuale bonus con JS, onClick assegna
     .active a .entry o elementi della main>nav */
 }
-
+.list-inline {
+   display: flex;
+}
 .scrollable {
    overflow-y: auto;
 }
