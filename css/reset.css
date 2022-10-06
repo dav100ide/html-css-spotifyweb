@@ -11,6 +11,9 @@ ul {
 button {
    font-family: inherit;
    border: none;
+   color: inherit;
+   background-color: transparent;
+   cursor: pointer;
 }
 
 a {

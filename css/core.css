@@ -51,7 +51,7 @@ main {
         typography
 ========================= */
 body {
-   font-family: "Montserrat", sans-serif;
+   font-family: 'Montserrat', sans-serif;
 }
 
 /* =====================
@@ -72,3 +72,13 @@ body {
 /* =====================
         buttons
 ========================= */
+.btn {
+   border: 2px solid white;
+   border-radius: 3.125rem;
+}
+.btn-primary {
+   color: white;
+}
+.btn-lg {
+   padding: 0.9375rem 2rem;
+}

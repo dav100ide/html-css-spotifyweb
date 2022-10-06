@@ -1,3 +1,15 @@
 main {
    background-color: bisque;
 }
+
+/* top bar */
+.top-bar {
+   /* barra incollata in alto alla viewport,
+ stessa altezza di header>.logo-container */
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   height: 6.2031rem;
+   background-color: #141922;
+   padding-inline: 0.375rem;
+}
