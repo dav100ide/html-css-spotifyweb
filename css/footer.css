@@ -75,9 +75,11 @@ footer.flex-box {
 }
 
 .inner-bar {
+   position: relative;
+   justify-content: flex-end;
+   align-items: center;
    background-color: lightgray;
-   opacity: 0;
-   transition: opacity ease-out 0.5s;
+   transition: background-color ease-in 0.3s;
 }
 
 .time-bar > .inner-bar {
@@ -87,9 +89,20 @@ footer.flex-box {
    width: 40%;
 }
 .bar:hover .inner-bar {
-   opacity: 1;
+   background-color: var(--active-color);
 }
 
+.circle-sm {
+   border-radius: 50%;
+   width: 0.8rem;
+   height: 0.8rem;
+   background-color: white;
+   scale: 0;
+   transition: scale ease-in 0.3s;
+}
+.bar:hover .circle-sm {
+   scale: 1;
+}
 /* footer right */
 
 .footer-right.flex-box {
