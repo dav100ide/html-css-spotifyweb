@@ -13,9 +13,11 @@ footer.flex-box {
 .footer-right {
    width: 20%;
 }
+
 :is(.footer-left, .footer-right) > * {
    /* margin: 0 1rem; */
 }
+
 .footer-center {
    width: 60%;
 }
@@ -24,12 +26,22 @@ footer.flex-box {
 .footer-left.flex-box {
    align-items: center;
 }
+
 .song-img {
    max-width: 3.75rem;
    margin-right: 0.5rem;
 }
+
 .song-buttons {
    margin-left: auto;
+}
+
+.song-info > *:hover {
+   text-decoration: underline;
+}
+
+.song-buttons > *:hover {
+   color: white;
 }
 /* footer center */
 
@@ -50,11 +62,13 @@ footer.flex-box {
    margin-inline: 1.3rem;
    /* play button al centro */
 }
+
 .song-time {
    padding: 0 4rem;
    align-items: center;
 }
 /* ------------bars---------------- */
+
 .bar {
    height: 0.3125rem;
    border-radius: 1.875rem;
@@ -85,9 +99,11 @@ footer.flex-box {
 .time-bar > .inner-bar {
    width: 30%;
 }
+
 .volume-bar > .inner-bar {
    width: 40%;
 }
+
 .bar:hover .inner-bar {
    background-color: var(--active-color);
 }
