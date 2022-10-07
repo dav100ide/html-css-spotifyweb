@@ -2,7 +2,7 @@ footer {
    background-color: var(--footer-bg);
    height: var(--footer-height);
    z-index: 6969;
-   padding: 0.4rem 0;
+   padding: 0.4rem;
 }
 
 footer.flex-box {
@@ -26,7 +26,7 @@ footer.flex-box {
 }
 .song-img {
    max-width: 3.75rem;
-   flex-shrink: 0;
+   margin-right: 0.5rem;
 }
 .song-buttons {
    margin-left: auto;
@@ -35,8 +35,11 @@ footer.flex-box {
 
 .footer-center.flex-box {
    flex-direction: column;
-   align-items: center;
    justify-content: space-between;
+}
+
+.control-buttons {
+   align-self: center;
 }
 
 .control-buttons > * {
@@ -47,8 +50,50 @@ footer.flex-box {
    margin-inline: 1.3rem;
    /* play button al centro */
 }
+.song-time {
+   padding: 0 4rem;
+   align-items: center;
+}
+/* ------------bars---------------- */
+.bar {
+   height: 0.3125rem;
+   border-radius: 1.875rem;
+}
 
-.song-time.flex-box .bar {
-   border: 2px solid var(--footer-gray);
-   width: 100%;
+.time-bar,
+.volume-bar {
+   background-color: #5a5a5a;
+}
+
+.time-bar {
+   margin-inline: 2rem;
+   flex-grow: 1;
+}
+
+.volume-bar {
+   width: 35%;
+}
+
+.inner-bar {
+   background-color: lightgray;
+   opacity: 0;
+   transition: opacity ease-out 0.5s;
+}
+
+.time-bar > .inner-bar {
+   width: 30%;
+}
+.volume-bar > .inner-bar {
+   width: 40%;
+}
+.bar:hover .inner-bar {
+   opacity: 1;
+}
+
+/* footer right */
+
+.footer-right.flex-box {
+   justify-content: flex-end;
+   align-items: center;
+   gap: 1rem;
 }
